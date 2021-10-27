@@ -31,15 +31,16 @@ public class RockPaperScissors {
           Random randomizer = new Random();
           int choixComputer = randomizer.nextInt(2) + 1;
 
-
-
           if( choix == choixComputer) {
+//            Entres if there is a tie
             System.out.println("Tie" );
             ties++;
           } else if ((choix == 1 && choixComputer == 3 ) || (choix == 2 && choixComputer == 1 ) || (choix == 3 && choixComputer == 2 ) ){
+//            Enters if the user won
             System.out.println(" Win" );
             wins++;
           } else {
+//            enters if the user losts
             loses++;
             System.out.println("Loses" );
           }
